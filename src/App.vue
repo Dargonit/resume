@@ -1,6 +1,8 @@
-<template> 
-  <HelloWorld id="hello-world" msg="Welcome Stranger!"/>
-  <NavLinks></NavLinks>
+<template>
+  <div class="container">
+    <HelloWorld id="hello-world" msg="Welcome Stranger!" />
+    <NavLinks></NavLinks>
+  </div>
 </template>
 
 <script>
@@ -20,22 +22,27 @@ export default {
 
 <style>
 body {
-  margin:0;
+  margin: 0;
+  padding: 0;
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #dfe4ea;
+  color: #4a90e2;
   background-color: #2e2e2e;
-  height:100vh;
-  padding:0%;
-    margin: 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#hello-world {
-  padding-top:45%;
-  
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 </style>
