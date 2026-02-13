@@ -41,6 +41,7 @@ export default {
     /* Light blue text */
     font-weight: 500;
     transition: all 0.3s ease;
+    background-color: #444343;
 }
 
 .link:hover {
