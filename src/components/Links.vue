@@ -1,14 +1,18 @@
 <template>
     <div id="container">
-        <a class="link">About Me</a>
+        <router-link to="/About" class="link">About Me</router-link>
         <a href="/documents/Resume.pdf" target="_blank" rel="noopener" class="link">Check out my Resume</a>
         <a class="link">Projects</a>
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'NavLinks',
+    components:{
+
+    },
     props: {
 
     }
